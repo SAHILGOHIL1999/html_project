@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee form</title>
+</head>
+<h2 align="center">Employe Form</h2>
+
+<form id="get">
+    <fieldset>
+        <legend>User personal information</legend>
+        <label for="name">Enter your name :</label>
+        <input type="text" id="name" placeholder="Enter Your name" /> <br><br>
+
+        <label for="date"> Birth date :</label>
+        <input type="text" id="date" name="Birth date" /><br><br>
+
+        <label for="email_id">Email Id :</label>
+        <input type="email" id="email_id" name="email" /><br><br>
+
+        <label for="address">Address :</label>
+        <textarea type="text" id="address" rows="2" cols="20"></textarea><br><br>
+
+        <label for="country_id">Country :</label>
+        <select id="country_id">
+            <option value="in">India</option>
+            <option value="uk">London</option>
+            <option value="us">America</option>
+            <option value="gm">Germany</option>
+
+            <optgroup label="India State">
+                <option value="gujarat">Gujarat</option>
+                <option value="bihar">Bihar</option>
+            </optgroup>
+        </select> <br><br>
+
+        <label for="password_id">Password :</label>
+        <input type="password" id="password_id" name="password" /><br><br>
+
+        <label for="gender">Gender :</label>
+        <input type="radio" id="gender" name="gender" value="male" />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female<br><br>
+
+        <label for="hobby">Hobby :</label><br>
+        <input type="checkbox" id="hobby" name="hobby" value="cricket" />Cricket<br>
+        <input type="checkbox" id="hobby" name="hobby" value="football" />Football<br>
+        <input type="checkbox" id="hobby" name="hobby" value="hockey" />Hockey<br><br>
+
+        <label for="date"> Join date</label>
+        <input type="date" id="date" name="join_date" /><br><br>
+
+        <label for="meetin_date">Select the meeting schedule :</label>
+        <input type="datetime-local" id="meetin_date" name="meetin_date" /><br><br>
+
+        <label for="file">Upload Files : </label>
+        <input type="file" id="file" name="file" value="file"/><br><br>
+
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit" value="submit">
+    </fieldset>
+</form>
+<script>
+    document.getElementById("get");
+</script>
+</body>
+
+</html>
