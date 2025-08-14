@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student form</title>
-    <style>
-        .box {
-            width: 700px;
-            height: 100vh;
-            border: 1px solid black;
-            margin: auto;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        label #{
-            /* display: block; */
-            margin-top: 10px;
-            font-weight: bold;
-        }
-    </style>
+    <title>Student Registration Form</title>
 </head>
-
 <body>
-    <div class="box">
-        <h1 align="center">Student Registration Form</h1>
-        <form>
-            <label><b>Name of the Applicant</b></label><br><br>
 
-            <label for="f_name">First Name</label>
-            <input type="text" id="f_name" name="f_name" />  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h2>Student Registration Form</h2>
 
-            <label for="l_name">Last Name</label>
-            <input type="text" id="l_name" name="l_name" />
+<form>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required><br><br>
 
-        </form>
-    </div>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="text" placeholder="MM" size="2" maxlength="2"> /
+    <input type="text" placeholder="DD" size="2" maxlength="2"> /
+    <input type="text" placeholder="YY" size="2" maxlength="2"><br><br>
+
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+        <option value="">--Select Course--</option>
+        <option value="bca">BCA</option>
+        <option value="bsc">B.Sc</option>
+        <option value="ba">BA</option>
+        <option value="bcom">B.Com</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
 </body>
-
 </html>
