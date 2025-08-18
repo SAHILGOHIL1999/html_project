@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Duployan:wght@400;700&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+}
+
+table thead tr th {
+
+}
+table thead tr th{
+    background-color: rgb(23, 97, 216);
+    color: whitesmoke;
+}
